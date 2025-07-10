@@ -12,7 +12,7 @@ import type { PassengerCounts, CabinClass } from "@/features/flight/types"
 import type { TrainPassengerCounts, TrainClass } from "@/features/train/types"
 import type { DateInfo } from "@/features/flight/types"
 
-export default function FlightGPT() {
+export default function ChatUI() {
   const [userLocation, setUserLocation] = useState<UserLocation>({
     city: "Los Angeles",
     airport: "LAX",
@@ -23,7 +23,7 @@ export default function FlightGPT() {
     {
       id: "1",
       type: "assistant",
-      content: `Hi! I'm FlightGPT, your AI travel assistant. Where would you like to go?`,
+      content: `Hi! I'm your AI assistant. How can I help you today?`,
       timestamp: new Date(),
       quickActions: [
         { label: "Tokyo", action: "Tokyo" },
